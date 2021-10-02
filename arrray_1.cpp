@@ -67,9 +67,9 @@ using namespace std;
 int main()
 {
   double A[5] = {3.4, 4.5, 7.2, 11.6, 23.3};
-  for (double X : A)
+  for (double var : A)
   {
-    cout << X << endl;
+    cout << var << endl;
   }
   return 0;
 }
