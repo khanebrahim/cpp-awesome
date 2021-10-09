@@ -77,6 +77,7 @@ int main()
 }
 */
 //recursive function
+/*
 #include <iostream>
 using namespace std;
 void fun(int n)
@@ -92,4 +93,26 @@ int main()
 {
   int x = 5;
   fun(x);
+}
+*/
+
+//Program for Linear Search using Functions
+#include <iostream>
+using namespace std;
+int Search(int A[], int n, int Linear)
+{
+  for (int i = 0; i < n; i++)
+    if (Linear == A[i])
+      return i;
+  return 0;
+}
+int main()
+{
+  int A[] = {2, 4, 5, 7, 10, 9, 13, 90, 45, 89};
+  int L;
+  cout << "Enter an Element to be Searched:";
+  cin >> L;
+  int index = Search(A, 10, L);
+
+  cout << "Element found at index :" << index << endl;
 }
