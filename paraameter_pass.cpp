@@ -38,6 +38,7 @@ int main()
 */
 // return by address
 
+/*
 #include <iostream>
 using namespace std;
 int *fun()
@@ -58,4 +59,37 @@ int main()
     cout << q[i] << endl;
   }
   return 0;
+}
+*/
+
+/*
+#include <iostream>
+using namespace std;
+int &fun(int &x)
+{
+  return x;
+}
+int main()
+{
+  int b = 18;
+  fun(b) = 29;
+  cout << b << endl;
+}
+*/
+//recursive function
+#include <iostream>
+using namespace std;
+void fun(int n)
+{
+  if (n > 0)
+  {
+
+    cout << n << endl;
+    fun(n - 1);
+  }
+}
+int main()
+{
+  int x = 5;
+  fun(x);
 }
